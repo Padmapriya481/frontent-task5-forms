@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .heads{
+            background-color:white;
+            width:max-content;
+        }
+    </style>
+</head>
+<body>
+    <center>
+<form action="submit.php" method="post"><!--interactive(formatting tag)-->
+    <fieldset class="heads">
+        <legend><b>Registration Form</b></legend><br>
+        <label for="fname" >name</label>
+    <input type="text" id="fname" placeholder="enter your firstname" required><br><br>
+    <label for="lname">lastname</label>
+        <input type="text" id="lname" name="lname" placeholder="enter your lastname" required><br><br>
+        <label for="age">dob</label>
+        <input type="date" id="date" name="age" required minlength="01-01-2001" maxlength="01-01-1990"> <br><br>
+        <label for="email">email id</label>
+        <input type="email" name="email" placeholder="enter your mail" autocomplete="off" required>
+        <br><br>
+        <label>phone number</label>
+        <input type="tel" pattern="^\d{10}$"><br><br>
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="pass" required maxlength="8"><br><br>
+        <label>college name
+        </label>
+        <input type="text" placeholder="enter your college " required><br><br>
+        <label for="year">department</label>
+        <select id="year">
+            <option value=""disabled>choose department</option>
+            <option value="ece">ECE</option>
+            <option value="cse">CSE</option>
+            <option value="it">IT</option>
+            <option value="mech">MECH</option>
+        </select><br><br>
+        <label>upload your resume</label>
+        <input type="file"><br><br>
+        <label>select course </label>
+        <label for="course">
+            <input type="radio" id="course" name="course" value="html">html</label>
+            <label for="course2">
+            <input type="radio" id="course2" name="course" value="css">css</label>
+            <label for="course3">
+            <input type="radio" id="course3" name="course" value="javascript">js<br><br></label>
+            
+        <input type="submit" value="Submit">
+        <button type="submit" >Save</button>
+        </fieldset>
+    <!--get->not secure it reveals the data
+    post->secure-->
+</center>
+</form>
+</body>
+</body>
+</html>
